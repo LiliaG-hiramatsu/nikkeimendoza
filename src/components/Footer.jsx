@@ -1,12 +1,22 @@
+import { Link as Anchor } from "react-router-dom"
+
 export default function Footer() {
+    let option = [
+        { to: "/", title: "Inicio" },
+        { to: "/eventos", title: "Eventos" },
+        { to: "/cursos", title: "Cursos" },
+        { to: "/contacto", title: "Contacto" }
+    ]
     return (
-        <footer className="h-48 bg-[#ff4a4a] text-white py-10 px-12 text-center">
-            <ul>
-                <li>Inicio</li>
-                <li>Eventos</li>
-                <li>Cursos</li>
-                <li>Galeria de fotos</li>
-            </ul>
+        <footer className="flex flex-col items-center bg-[#ff4a4a] h-48 py-5">
+                {option.map(each => 
+                    <Anchor 
+                        key={each.to}
+                        to={each.to} 
+                        className="text-white py-2 text-center text-[14px] hover:text-red-400">
+                        {each.title}
+                    </Anchor>
+                )}
         </footer>
     )
 }

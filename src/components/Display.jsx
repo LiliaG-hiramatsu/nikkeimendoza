@@ -32,7 +32,7 @@ export default function Display({ option }) {
                             <Anchor
                                 key={each.to}
                                 to={each.to}
-                                className="text-[14px] text-start mt-2 bg-red-300 px-2 py-[2px] rounded-xl hover:bg-red-400"
+                                className="text-[14px] text-center mt-2 bg-red-300 px-2 py-[2px] rounded-xl hover:bg-red-400"
                                 onClick={() => setShow(!show)}>
                                 {each.title}
                             </Anchor>
