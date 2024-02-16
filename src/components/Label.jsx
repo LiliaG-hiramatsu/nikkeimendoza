@@ -3,24 +3,37 @@ import { Link as Anchor } from "react-router-dom";
 
 export default function Label({ option }) {
     return (
-        <div
-        className="hidden 
-            md:flex md:items-center md:gap-4
-            lg:gap-8"
-        >
-        {option.map((each) => (
-            <Anchor
-            key={each.to}
-            to={each.to}
-            className="font-bold text-center text-[14px]
-                        md:text-[20px]
-                        lg:text-[24px]
-                        min-[2000px]:text-[28px]
-                        min-[2500px]:text-[32px]"
+        <div className="hidden
+        md:flex md:justify-between md:items-center">
+            <div
+            className="hidden
+                md:flex md:justify-start"
             >
-            {each.title}
-            </Anchor>
-        ))}
+                <img 
+                    src="/public/data/logo.jpg" 
+                    alt="Logo"
+                    className="w-[100px] rounded-full" 
+                />
+            </div>
+            <div
+            className="hidden 
+                md:flex md:justify-end"
+            >
+            {option.map((each) => (
+                <Anchor
+                key={each.to}
+                to={each.to}
+                className="h-full text-slate-700 text-nowrap mx-1 bg-[#ffd9cf] px-3 py-2 rounded-xl hover:bg-[#ff4a4a] hover:text-white
+                            md:text-[18px]
+                            lg:text-[20px]
+                            min-[2000px]:text-[24px]
+                            min-[2500px]:text-[28px]"
+                >
+                {each.title}
+                </Anchor>
+            ))}
+            </div>
         </div>
+        
     );
 }
