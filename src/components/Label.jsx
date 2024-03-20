@@ -13,7 +13,7 @@ export default function Label({ option }) {
                     src="/public/data/logo.jpg" 
                     alt="Logo"
                     className="w-[60px] rounded-full
-                        lg:w-[100px]" 
+                        lg:w-[100px]"
                 />
             </div>
             <div

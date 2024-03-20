@@ -3,7 +3,7 @@ import { Link as Anchor } from "react-router-dom";
 import { useState } from "react";
 
 export default function Display({ option }) {
-    const [show, setShow] = useState(true)  // Estado para que cada vez que haga click en una opcion del menu, este se oculte.
+    const [show, setShow] = useState(false)  // Estado para que cada vez que haga click en una opcion del menu, este se oculte.
     // show empieza en true, entonces el menu hamburguesa esta desplegado (icono de cruz)
     // cuando show sea false (que es cuando haga click en alguna opcion del menu), se tiene que cerrar el menu (icono menu hamburguesa)
     return (

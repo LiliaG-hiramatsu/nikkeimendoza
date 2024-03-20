@@ -13,7 +13,7 @@ export default function Footer() {
                     <Anchor 
                         key={each.to}
                         to={each.to} 
-                        className="text-white py-2 text-center text-[14px] hover:text-red-400">
+                        className="text-white py-2 text-center text-[14px] hover:text-black">
                         {each.title}
                     </Anchor>
                 )}
