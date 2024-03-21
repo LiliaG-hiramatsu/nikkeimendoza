@@ -10,10 +10,12 @@ export default function Label({ option }) {
                 md:flex md:justify-start"
             >
                 <img 
-                    src="/public/data/logo.jpg" 
+                    src="/data/logo.jpg" 
                     alt="Logo"
                     className="w-[60px] rounded-full
-                        lg:w-[100px]"
+                        lg:w-[80px]
+                        xl:w-[100px]
+                        min-[2500px]:w-[130px]"
                 />
             </div>
             <div
@@ -24,9 +26,10 @@ export default function Label({ option }) {
                 <Anchor
                 key={each.to}
                 to={each.to}
-                className="h-full text-slate-700 text-nowrap mx-1 bg-[#ffd9cf] px-3 py-2 rounded-xl hover:bg-[#ff4a4a] hover:text-white
+                className="h-full text-slate-700 text-nowrap mx-1 bg-[#ffd9cf] px-3 py-2 rounded-xl hover:bg-[#ff0a0a] hover:text-white hover:shadow-xl hover:transition-colors
                             md:text-[14px]
-                            lg:text-[18px]
+                            lg:text-[16px]
+                            xl:text-[18px]
                             min-[2000px]:text-[22px]
                             min-[2500px]:text-[24px]"
                 >
