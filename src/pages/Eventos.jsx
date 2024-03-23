@@ -6,7 +6,7 @@ export default function Eventos() {
   {
     "id": 1,
     "img": "/data/random-image.jpg",
-    "nombre": "Concierto de Taiko",
+    "nombre": "Exhibición de Taiko",
     "fecha": "6-04-2024"
   },
   {
