@@ -9,14 +9,17 @@ export default function Label({ option }) {
             className="hidden
                 md:flex md:justify-start"
             >
-                <img 
-                    src="/data/logo.jpg" 
-                    alt="Logo"
-                    className="w-[60px] rounded-full
-                        lg:w-[80px]
-                        xl:w-[100px]
-                        min-[2500px]:w-[130px]"
-                />
+                <Anchor
+                to="/">
+                    <img 
+                        src="/data/logo.jpg" 
+                        alt="Logo"
+                        className="w-[60px] rounded-full cursor-pointer
+                            lg:w-[80px]
+                            xl:w-[100px]
+                            min-[2500px]:w-[130px]"
+                    />
+                </Anchor>
             </div>
             <div
             className="hidden 

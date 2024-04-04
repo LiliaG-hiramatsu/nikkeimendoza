@@ -10,7 +10,7 @@ export default function DetalleEvento() {
             lg:text-[24px]
             xl:text-[28px]">
                 {evento_id}
-                Titulo detalle del evento
+                Título detalle del evento
             </h1>
             <p className="text-[14px] text-justify
             md:text-[16px]
