@@ -21,7 +21,7 @@ export default function Contacto() {
       <div className="mx-[10%] flex flex-col
                       md:flex-row md:justify-evenly md:mx-[10%]
                       xl:mx-[5%]">
-        <div className="w-full my-10 p-4 flex flex-col items-center bg-[#f9e8c4]/40 border border-[#ffb9b9] rounded-md shadow-xl
+        <div className="w-full my-10 p-4 flex flex-col items-center bg-[#555555]/40 border border-[#ffb9b9] rounded-md shadow-xl
         md:w-[50%] md:my-10 md:p-6
         lg:w-[45%]
         xl:w-[35%] xl:my-16
@@ -89,14 +89,14 @@ export default function Contacto() {
             ref={refForm} 
             action="" 
             onSubmit={handleSubmit} 
-            className="flex flex-col mb-10 p-4 bg-[#f9e8c4]/40 border border-[#ffb9b9] rounded-md shadow-xl
+            className="flex flex-col mb-10 p-4 bg-[#555555]/40 border border-[#ffb9b9] rounded-md shadow-xl
             md:my-10 md:p-6
             xl:my-16">
             <h1 className="text-center text-[whitesmoke] font-semibold text-[16px]
             md:text-[18px]
             lg:text-[22px]
             xl:text-[28px]">
-              Contactanos
+              Contáctanos
             </h1>
             <input 
               type="text" 

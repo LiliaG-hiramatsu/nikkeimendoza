@@ -48,16 +48,18 @@ export default function Eventos() {
   return (
     <div className="flex flex-col items-center">
       <div className="w-full h-96 bg-cover bg-center bg-[url('/data/bg-eventos-prox.jpg')] my-2">
-        <h1 className="text-[28px] text-start pl-6 pt-24 text-[#fefefe] font-bold
-                    md:text-[30px]
-                    lg:text-[40px]
-                    xl:text-[60px]">
+        <h1 className="text-[32px] text-start pl-6 pt-24 pb-4 text-[#fefefe] font-extrabold bg-black/20
+                    md:text-[36px]
+                    lg:text-[48px]
+                    xl:text-[56px]">
           Próximos Eventos
         </h1>
       </div>
       <div className="grid grid-cols-1 gap-5 my-10 mx-[30px]
-                  md:grid-cols-2 md:gap-7 md:mx-[60px]
-                  lg:grid-cols-2 lg:gap-10 lg:mx-[100px]">
+                  md:grid-cols-2 md:gap-10 md:mx-[60px]
+                  lg:gap-20 lg:mx-[150px]
+                  xl:grid-cols-3
+                  min-[2000px]:mx-[300px] min-[2000px]:gap-24 min-[200px]:my-20">
         { eventos_pos?.map(each =>
           <EventoCard
             key={each.id}
@@ -70,20 +72,25 @@ export default function Eventos() {
           )
         }
       </div>
-      <div className="w-[60vw] h-[80vh] bg-[#e9feff] mb-5 p-10 rounded-xl shadow-xl">
+      <div className="w-[90vw] h-[80vh] bg-[#e9feff] mb-5 p-2 rounded-xl shadow-xl
+      md:w-[80vw] md:p-5
+      lg:w-[60vw] lg:p-10
+      xl:w-[50vw]">
         <Calendario />
       </div>
       <div className="w-full h-96 bg-cover bg-center bg-[url('/data/bg-eventos-pas.jpg')] my-2">
-        <h1 className="text-[28px] text-start pl-6 pt-24 text-[#fefefe] font-bold
-                    md:text-[30px]
-                    lg:text-[40px]
-                    xl:text-[60px]">
+        <h1 className="text-[32px] text-start pl-6 pt-24 pb-4 text-[#fefefe] font-extrabold bg-black/20
+                    md:text-[36px]
+                    lg:text-[48px]
+                    xl:text-[56px]">
           Eventos Anteriores
         </h1>
       </div>
       <div className="grid grid-cols-1 gap-5 my-10 mx-[30px]
-                  md:grid-cols-2 md:gap-7 md:mx-[60px]
-                  lg:grid-cols-3 lg:gap-10 lg:mx-[100px]">
+                  md:grid-cols-2 md:gap-10 md:mx-[60px]
+                  lg:gap-20 lg:mx-[150px]
+                  xl:grid-cols-3
+                  min-[2000px]:mx-[300px] min-[2000px]:gap-24 min-[200px]:my-20">
         { eventos_ant?.map(each =>
           <EventoCard
             key={each.id}

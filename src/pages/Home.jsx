@@ -3,25 +3,25 @@ export default function Home() {
         <main className="grow flex flex-col items-center">
             <div className="w-full h-screen bg-cover bg-center bg-[url('/data/random-image.jpg')] relative opacity-75
                         md:bg-[url('/data/portada1.jpg')]
-                        xl:bg-[url('/data/portada-xl.jpg')]">
+                        lg:bg-[url('/data/portada-xl.jpg')]">
             </div>
             <div className="w-full absolute inset-x-1/2 inset-y-1/4 translate-y-1/2 -translate-x-1/2 z-10
                         md:-translate-y-4
-                        xl:translate-y-1/2">
-                <h1 className="text-[28px] text-[#333] text-center font-semibold
-                        md:text-[30px]
-                        lg:text-[36px]
-                        xl:text-[48px]
-                        2xl:text-[56px]
-                        min-[2500px]:text-[64px]">
+                        lg:translate-y-1/2">
+                <h1 className="text-[32px] text-center font-extrabold
+                        md:text-[36px]
+                        lg:text-[48px]
+                        xl:text-[56x]
+                        2xl:text-[64px]
+                        min-[2500px]:text-[80px]">
                         Asociación Nikkei Mendoza
                 </h1>
-                <h1 className="text-[28px] text-[#333] text-center font-semibold
-                        md:text-[30px]
-                        lg:text-[36px]
-                        xl:text-[48px]
-                        2xl:text-[56px]
-                        min-[2500px]:text-[64px]">
+                <h1 className="text-[32px] text-center font-extrabold
+                        md:text-[36px]
+                        lg:text-[48px]
+                        xl:text-[56x]
+                        2xl:text-[64px]
+                        min-[2500px]:text-[80px]">
                         メンドーサ日本人会
                 </h1>
             </div>

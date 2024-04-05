@@ -25,9 +25,10 @@ export default function Footer() {
                     )}
                 </div>
                 <div className="flex flex-col justify-center">
-                    <ul className="list-none py-4 w-[15px]
-                                    md:w-[18px]
-                                    xl:w-[20px]"
+                    <ul className="list-none py-4 w-[12px]
+                                    md:w-[14px]
+                                    lg:w-[16px]
+                                    xl:w-[18px]"
                     >
                         <li>
                             <a href="https://www.instagram.com/nikkeimendoza" rel="noreferrer" target="_blank">
