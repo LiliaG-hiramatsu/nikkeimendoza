@@ -4,7 +4,7 @@ import { Link as Anchor } from "react-router-dom"
 export default function EventoCard({ src, alt, name, date, id }) {
     return (
         <div className="w-full h-auto rounded-xl overflow-hidden shadow-lg bg-[#fefefe]">
-            <img src={src} alt={alt} className="aspect-[4/3] object-cover" />
+            <img src={src} alt={alt} className="aspect-[500/350] object-cover" />
             <div className="flex flex-col px-2 py-4 ml-2">
                 <h1 className="py-1 px-1 font-semibold">{name}</h1>
                 <p className="py-1 px-1">{date}</p>

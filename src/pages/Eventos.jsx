@@ -5,15 +5,15 @@ export default function Eventos() {
   const eventos_pos = [
   {
     "id": 1,
-    "img": "/data/random-image.jpg",
+    "img": "/data/evento_taiko.png",
     "nombre": "Exhibición de Taiko",
     "fecha": "6-04-2024"
   },
   {
     "id": 2,
-    "img": "/data/random-image.jpg",
-    "nombre": "Feria Nikkei",
-    "fecha": "23-06-24 y 24-06-2024"
+    "img": "/data/almuerzo.jpg",
+    "nombre": "Almuerzo de familias",
+    "fecha": "13-04-24"
   },
   {
     "id": 3,
@@ -55,8 +55,8 @@ export default function Eventos() {
           Próximos Eventos
         </h1>
       </div>
-      <div className="grid grid-cols-1 gap-5 my-10 mx-[30px]
-                  md:grid-cols-2 md:gap-10 md:mx-[60px]
+      <div className="grid grid-cols-1 gap-7 mx-[30px] my-0
+                  md:grid-cols-2 md:gap-10 md:mx-[60px] md:my-10
                   lg:gap-20 lg:mx-[150px]
                   xl:grid-cols-3
                   min-[2000px]:mx-[300px] min-[2000px]:gap-24 min-[200px]:my-20">
@@ -72,8 +72,8 @@ export default function Eventos() {
           )
         }
       </div>
-      <div className="w-[90vw] h-[80vh] bg-[#e9feff] mb-5 p-2 rounded-xl shadow-xl
-      md:w-[80vw] md:p-5
+      <div className="w-[90vw] h-[450px] bg-[#e9feff] mb-5 p-2 rounded-xl shadow-xl
+      md:w-[80vw] md:h-[80vh] md:p-5
       lg:w-[60vw] lg:p-10
       xl:w-[50vw]">
         <Calendario />
