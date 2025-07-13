@@ -4,6 +4,7 @@ import Label from "./Label"
 export default function NavBar() {
     let options = [
         { to: "/", title: "Inicio" },
+        { to: "/sobre", title: "Sobre Nosotros" },
         { to: "/eventos", title: "Eventos" },
         { to: "/cursos", title: "Cursos" },
         { to: "/contacto", title: "Contacto" }
